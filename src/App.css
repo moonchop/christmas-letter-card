@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Mirza&amp;subset=latin-ext");
+@font-face {
+  font-family: "Rubik";
+  font-weight: 50;
+  src: url("./fonts/RubikVinyl-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nanum";
+  font-weight: 50;
+  src: url("./fonts/NanumPenScript-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hi";
+  font-weight: 50;
+  src: url("./fonts/HiMelody-Regular.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
 }
@@ -12,6 +27,14 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+.title {
+  /* color: rgb(178, 24, 24); */
+  color: white;
+  font-family: "Rubik";
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 4rem;
 }
 
 .card {
@@ -109,8 +132,8 @@ body {
 @media (max-width: 479px) {
   .card,
   .card-page {
-    width: 150px;
-    height: 214px;
+    width: 170px;
+    height: 400px;
   }
 }
 
@@ -151,9 +174,9 @@ body {
 
 .cart-page-inside,
 .cart-page-bottom {
-  background-color: #d4d1d0;
+  background-color: white;
   background-image: url("https://www.dropbox.com/s/8hw7guch8d151kg/pattern.png?raw=1");
-  border: 20px solid #d4d1d0;
+  border: 20px solid rgb(188, 48, 48);
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -176,7 +199,7 @@ body {
 @media (max-width: 767px) {
   .cart-page-inside,
   .cart-page-bottom {
-    border: 10px solid #d4d1d0;
+    border: 10px solid rgb(188, 48, 48);
   }
 }
 
@@ -313,4 +336,15 @@ body {
   to {
     transform: translateY(90vh);
   }
+}
+
+.text {
+  font-size: 17px;
+  text-align: start;
+  font-family: "Nanum";
+}
+.from {
+  font-size: 1rem;
+  text-align: end !important;
+  padding-right: 0.5rem;
 }

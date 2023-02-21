@@ -2,10 +2,13 @@ import "./App.css";
 import Snowfall from "react-snowfall";
 function App() {
   const onClick = () => {
-    document.getElementById("card").classList.add("is-opened");
+    document.getElementById("card").classList.contains("is-opened")
+      ? document.getElementById("card").classList.remove("is-opened")
+      : document.getElementById("card").classList.add("is-opened");
   };
   return (
     <div className="App">
+      <div className="title">Merry Christmas</div>
       <Snowfall
         // Changes the snowflake color
         color="white"
@@ -199,16 +202,23 @@ function App() {
           </div>
         </div>
         <div className="card-page cart-page-bottom">
-          <p>
-            Lorem ipsum dolor.
-            <br />
-            <br />
-            Sit Amet
+          <p className="text">
+            <span
+              style={{
+                textDecoration: "underline",
+                textUnderlineOffset: "3px",
+              }}
+            >
+              To.
+            </span>
+            <span>
+              <div className="from">From.</div>
+            </span>
           </p>
         </div>
       </div>
 
-      <span className="click-icon">
+      <span id="click-icon" className="click-icon">
         <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="#fff"
