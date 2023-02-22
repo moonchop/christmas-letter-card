@@ -1,43 +1,43 @@
 import "./App.css";
 import Snowfall from "react-snowfall";
 function App() {
-  const onClick = () => {
-    document.getElementById("card").classList.contains("is-opened")
-      ? document.getElementById("card").classList.remove("is-opened")
-      : document.getElementById("card").classList.add("is-opened");
-  };
-  return (
-    <div className="App">
-      <div className="title">Merry Christmas</div>
-      <Snowfall
-        // Changes the snowflake color
-        color="white"
-        // Applied to the canvas element
-        // style={{ background: "#fff" }}
-        // Controls the number of snowflakes that are created (default 150)
-        snowflakeCount={200}
-      />
-      <div id="card" className="card" onClick={onClick}>
-        <div className="card-page cart-page-front">
-          <div className="card-page cart-page-outside"></div>
-          <div className="card-page cart-page-inside">
-            <span className="merry-christmas">
-              <svg
-                version="1.1"
-                id="Layer_2"
-                xmlns="http://www.w3.org/2000/svg"
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="540.054px"
-                height="551.88px"
-                viewBox="0 0 540.054 551.88"
-                // enable-background="new 0 0 540.054 551.88"
-                // xml:space="preserve"
-              >
-                <path
-                  fill="#0A0A0A"
-                  d="M408.424,259.126c-6.145,0.44-11.873,2.104-17.349,4.458c1.873-7.48,7.205-30.873-6.877-29.254
+	const onClick = () => {
+		document.getElementById("card").classList.contains("is-opened")
+			? document.getElementById("card").classList.remove("is-opened")
+			: document.getElementById("card").classList.add("is-opened");
+	};
+	return (
+		<div className="App">
+			<div className="title">Merry Christmas</div>
+			<Snowfall
+				// Changes the snowflake color
+				color="white"
+				// Applied to the canvas element
+				// style={{ background: "#fff" }}
+				// Controls the number of snowflakes that are created (default 150)
+				snowflakeCount={200}
+			/>
+			<div id="card" className="card" onClick={onClick}>
+				<div className="card-page cart-page-front">
+					<div className="card-page cart-page-outside"></div>
+					<div className="card-page cart-page-inside">
+						<span className="merry-christmas">
+							<svg
+								version="1.1"
+								id="Layer_2"
+								xmlns="http://www.w3.org/2000/svg"
+								// xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								width="540.054px"
+								height="551.88px"
+								viewBox="0 0 540.054 551.88"
+							// enable-background="new 0 0 540.054 551.88"
+							// xml:space="preserve"
+							>
+								<path
+									fill="#0A0A0A"
+									d="M408.424,259.126c-6.145,0.44-11.873,2.104-17.349,4.458c1.873-7.48,7.205-30.873-6.877-29.254
 	c-1.13,0.129-1.724,0.823-1.892,1.648c-0.16,0.177-0.31,0.373-0.429,0.615c-3.015,6.094-5.718,14.199-9.76,19.695
 	c-1.472,2-2.722,4.848-5.667,6c-7.667,3-1-20.667,0.403-26.008c1.336-5.086-5.09-5.446-9.21-5.564
 	c-1.478-0.042-2.408,0.997-2.672,2.134c-1.771,4.952-4.872,14.68-4.664,22.817c-1.675,2.943-5.191,12.621-10.857,13.621
@@ -196,38 +196,59 @@ function App() {
 	c0-2.071,1.679-3.75,3.75-3.75S201.867,397.218,201.867,399.289z M331.617,377.289c0,2.07-1.679,3.75-3.75,3.75
 	s-3.75-1.68-3.75-3.75c0-2.071,1.679-3.75,3.75-3.75S331.617,375.218,331.617,377.289z M366.867,385.289
 	c0,2.07-1.679,3.75-3.75,3.75s-3.75-1.68-3.75-3.75c0-2.071,1.679-3.75,3.75-3.75S366.867,383.218,366.867,385.289z"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-        <div className="card-page cart-page-bottom">
-          <p className="text">
-            <span
-              style={{
-                textDecoration: "underline",
-                textUnderlineOffset: "3px",
-              }}
-            >
-              To.
-            </span>
-            <span>
-              <div className="from">From.</div>
-            </span>
-          </p>
-        </div>
-      </div>
+								/>
+							</svg>
+						</span>
+					</div>
+				</div>
+				<div className="card-page cart-page-bottom">
+					<p className="text">
+						<span
+							style={{
+								textDecoration: "underline",
+								textUnderlineOffset: "3px",
+							}}
+						>
+							To.You
+						</span>
+						<br />
+						<br />
+						<br />
+						This is example.This is example.This is example.
+						<br />
+						<br />
+						This is example.This is example.This is example.
+						<br /> 
+						<br />
+						This is example.This is example.This is example.
+						<br />            
+						<br />
+						This is example.This is example.This is example.
+						<br />            
+						<br />
+						This is example.This is example.This is example.
+						<br />            
+						<br />
+						This is example.This is example.This is example.
+						<br />
+						<br />
+						<span>
+							<div className="from">From. Me</div>
+						</span>
+					</p>
+				</div>
+			</div>
 
-      <span id="click-icon" className="click-icon">
-        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <path
-            fill="#fff"
-            d="M31.6 17.7V26c0 1.9-.7 3.7-2 5.1v.9c0 1.6-1.3 3-3 3h-8.4c-1.6 0-3-1.3-3-3 0-.6.5-1 1-1s1 .4 1 1c0 .5.4 1 1 1h8.4c.5 0 1-.4 1-1v-1.2-.3-.1c0-.1.1-.2.2-.3 1.1-1.1 1.7-2.5 1.7-4v-8.3c0-.3-.1-.5-.3-.7-.1-.1-.5-.4-1-.3-.4.1-.8.6-.8 1.1v2.4c0 .6-.5 1-1 1s-1-.4-1-1v-5.5c0-.3-.1-.5-.3-.7s-.4-.3-.7-.3c-.5 0-1 .5-1 1v5.5c0 .6-.5 1-1 1s-1-.4-1-1v-8.5c0-.3-.1-.5-.3-.7s-.4-.3-.7-.3c-.5 0-1 .5-1 1v8.5c0 .6-.5 1-1 1s-1-.4-1-1V7.7c0-.3-.1-.5-.3-.7-.1-.1-.5-.4-1-.3-.4.1-.8.6-.8 1.1V20c0 .4-.2.8-.6.9-.4.2-.8.1-1.1-.2L11 18.1c-.6-.6-1.6-.6-2.2.1-.5.6-.4 1.5.2 2.1l7 7c.4.4.4 1 0 1.4-.2.2-.5.3-.7.3-.3 0-.5-.1-.7-.3l-7-7.1c-1.3-1.3-1.5-3.5-.3-4.8C8 16 9 15.5 10 15.5c.9 0 1.8.4 2.5 1l.9.9V7.9c0-1.4.9-2.7 2.3-3 1-.3 2.1 0 2.8.8.6.6.9 1.3.9 2.1V9c.3-.1.7-.2 1-.2.8 0 1.5.3 2.1.9s.9 1.3.9 2.1v.2c.3-.1.7-.2 1-.2.8 0 1.5.3 2.1.9s.9 1.3.9 2.1v.2c.1 0 .2-.1.3-.1 1-.3 2.1 0 2.8.8.8.5 1.1 1.3 1.1 2z"
-          />
-        </svg>
-      </span>
-    </div>
-  );
+			<span id="click-icon" className="click-icon">
+				<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+					<path
+						fill="#fff"
+						d="M31.6 17.7V26c0 1.9-.7 3.7-2 5.1v.9c0 1.6-1.3 3-3 3h-8.4c-1.6 0-3-1.3-3-3 0-.6.5-1 1-1s1 .4 1 1c0 .5.4 1 1 1h8.4c.5 0 1-.4 1-1v-1.2-.3-.1c0-.1.1-.2.2-.3 1.1-1.1 1.7-2.5 1.7-4v-8.3c0-.3-.1-.5-.3-.7-.1-.1-.5-.4-1-.3-.4.1-.8.6-.8 1.1v2.4c0 .6-.5 1-1 1s-1-.4-1-1v-5.5c0-.3-.1-.5-.3-.7s-.4-.3-.7-.3c-.5 0-1 .5-1 1v5.5c0 .6-.5 1-1 1s-1-.4-1-1v-8.5c0-.3-.1-.5-.3-.7s-.4-.3-.7-.3c-.5 0-1 .5-1 1v8.5c0 .6-.5 1-1 1s-1-.4-1-1V7.7c0-.3-.1-.5-.3-.7-.1-.1-.5-.4-1-.3-.4.1-.8.6-.8 1.1V20c0 .4-.2.8-.6.9-.4.2-.8.1-1.1-.2L11 18.1c-.6-.6-1.6-.6-2.2.1-.5.6-.4 1.5.2 2.1l7 7c.4.4.4 1 0 1.4-.2.2-.5.3-.7.3-.3 0-.5-.1-.7-.3l-7-7.1c-1.3-1.3-1.5-3.5-.3-4.8C8 16 9 15.5 10 15.5c.9 0 1.8.4 2.5 1l.9.9V7.9c0-1.4.9-2.7 2.3-3 1-.3 2.1 0 2.8.8.6.6.9 1.3.9 2.1V9c.3-.1.7-.2 1-.2.8 0 1.5.3 2.1.9s.9 1.3.9 2.1v.2c.3-.1.7-.2 1-.2.8 0 1.5.3 2.1.9s.9 1.3.9 2.1v.2c.1 0 .2-.1.3-.1 1-.3 2.1 0 2.8.8.8.5 1.1 1.3 1.1 2z"
+					/>
+				</svg>
+			</span>
+		</div>
+	);
 }
 
 export default App;
